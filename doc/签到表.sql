@@ -1,0 +1,8 @@
+CREATE TABLE `dts_sign` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(64) DEFAULT NULL,
+  `sign_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `dt` varchar(255) DEFAULT NULL,
+  `creatime_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+)
