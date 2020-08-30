@@ -43,7 +43,7 @@
 
         <!--数据库连接信息-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/demo-shop?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;verifyServerCertificate=false&amp;useSSL=false"
+                        connectionURL="jdbc:mysql://localhost:3306/demo?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;verifyServerCertificate=false&amp;useSSL=false"
                         userId="root"
                         password="123456"/>
 
@@ -55,7 +55,12 @@
         <sqlMapGenerator targetPackage="com.qiguliuxing.dts.db.dao" targetProject="src/main/resources"/>
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.qiguliuxing.dts.db.dao"
                              targetProject="src/main/java"/>
-        <!--demo-shop库-->
-        <table tableName="%" schema="demo-shop" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" ></table>
+        <!--demo库-->
+        <table tableName="dts_sign" domainObjectName="DtsSign"
+               enableInsert="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" ></table>
     </context>
 </generatorConfiguration>
