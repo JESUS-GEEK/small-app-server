@@ -56,7 +56,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.qiguliuxing.dts.db.dao"
                              targetProject="src/main/java"/>
         <!--demo库-->
-        <table tableName="dts_sign" domainObjectName="DtsSign"
+        <table tableName="dts_about_me" domainObjectName="DtsAboutMe"
                enableInsert="true"
                enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true"

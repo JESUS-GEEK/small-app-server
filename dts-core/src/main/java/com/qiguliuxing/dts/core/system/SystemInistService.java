@@ -61,14 +61,14 @@ class SystemInistService {
 		infos.put("本地对象访问端口", environment.getProperty("dts.storage.local.port"));
 
 		// 微信相关信息,屏蔽打印控制台
-		/*
-		 * infos.put(SystemInfoPrinter.CREATE_PART_COPPER + 2, "微信相关");
-		 * infos.put("微信APP KEY", environment.getProperty("dts.wx.app-id"));
-		 * infos.put("微信APP-SECRET", environment.getProperty("dts.wx.app-secret"));
-		 * infos.put("微信支付MCH-ID", environment.getProperty("dts.wx.mch-id"));
-		 * infos.put("微信支付MCH-KEY", environment.getProperty("dts.wx.mch-key"));
-		 * infos.put("微信支付通知地址", environment.getProperty("dts.wx.notify-url"));
-		 */
+
+		 infos.put(SystemInfoPrinter.CREATE_PART_COPPER + 2, "微信相关");
+		 infos.put("微信APP KEY", environment.getProperty("dts.wx.app-id"));
+		 infos.put("微信APP-SECRET", environment.getProperty("dts.wx.app-secret"));
+		 infos.put("微信支付MCH-ID", environment.getProperty("dts.wx.mch-id"));
+		 infos.put("微信支付MCH-KEY", environment.getProperty("dts.wx.mch-key"));
+		 infos.put("微信支付通知地址", environment.getProperty("dts.wx.notify-url"));
+
 
 		// 测试获取System表配置信息
 		infos.put(SystemInfoPrinter.CREATE_PART_COPPER + 3, "系统设置");

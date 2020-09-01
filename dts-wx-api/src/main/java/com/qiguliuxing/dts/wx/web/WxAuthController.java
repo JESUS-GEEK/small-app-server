@@ -227,7 +227,8 @@ public class WxAuthController {
         }
         userToken.setSessionKey(sessionKey);
 
-        Map<Object, Object> result = new HashMap<Object, Object>();
+        Map<Object, Object> result = new HashMap<Object, Object>(16);
+        result.put("openId", openId);
         result.put("token", userToken.getToken());
         result.put("tokenExpire", userToken.getExpireTime().toString());
         userInfo.setUserId(user.getId());
